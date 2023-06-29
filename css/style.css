@@ -1,0 +1,178 @@
+body{
+    background-color: #5818;
+}
+#wrap{
+    display: grid;
+    grid-template-areas: "header header header"
+                         "nav nav nav"
+                         "body body body"
+                         "bodyed bodyed bodyed"
+                         "contacts contacts contacts"
+                         "img1 trad1 trad1"
+                         "trad2 trad2 img2"
+                         "img3 trad3 trad3"
+                         "pepeha pepeha pepeha"
+                         "footer footer footer";
+}
+#topbar{
+    grid-area: header;
+    display: grid;
+    background-color: #FFC;
+    grid-template-areas: "title name";
+}
+#title{
+    grid-area: title;
+}
+#name{
+    grid-area: name;
+    text-align: center;
+}
+#title,#name{
+    background-color: #FAED91;
+    margin: 12px;
+}
+h2{
+    color: #F5BD1E;
+    margin-left: 5px
+}
+#nav{
+    grid-area: nav;
+    display: grid;
+    background-color: #FFC;
+    grid-template-areas: "am e ci"
+}
+#am{
+    grid-area: am;
+}
+#e{
+    grid-area: e;
+}
+#ci{
+    grid-area: ci
+}
+#am,#e,#ci{
+    text-align: center;
+    background-color: #5818;
+    margin: 12px;
+}
+a{
+    color:#FEFAD4 ;
+}
+
+#body{
+    grid-area: body;
+    background-color: #FEFAD4;
+    text-align: center;
+    margin: 12px;
+}
+#img1{
+    grid-area: img1;
+    float: left;
+    align-content: center;
+}
+#trad1{
+    grid-area: trad1;
+}
+#trad2{
+    grid-area: trad2;
+}
+#img2{
+    grid-area: img2;
+    float: left;
+    align-content: center;
+}
+#img3{
+    grid-area: img3;
+    float: left;
+    align-content: center;
+}
+#trad3{
+    grid-area: trad3;
+}
+#trad1,#trad2,#trad3{
+    background-color: #FEFAD4;
+    margin: 15px;
+}
+#pepeha{
+    grid-area: pepeha;
+    background-color: #FEFAD4;
+    text-align: center;
+    width: 500px;
+    margin: auto;
+    border: 15px solid #A4BF80; 
+}
+#bodyed{
+    grid-area: bodyed;
+    background-color: #FEFAD4;
+    text-align: center;
+    width: 1060px;
+    margin: auto;
+    border: 25px solid #A4BF80; 
+}
+p,h4,h3{
+    margin-left: 5px;
+    color: #765D69;
+}
+#contacts{
+    display: grid;
+    grid-area: contacts;
+    grid-template-areas: "p g"
+                         "i fb";
+}
+#p{
+    grid-area: p;
+    grid-template-areas: "phoneimg phone"
+}
+#g{
+    grid-area: g;
+    grid-template-areas: "gmailimg gmail"
+}
+#i{
+    grid-area: i;
+    grid-template-areas: "instaimg insta"
+}
+#fb{
+    grid-area: fb;
+    grid-template-areas: "facebookimg facebook"
+}
+#p,#g,#i,#fb{
+    background-color: #FEFAD4;
+    margin: auto;
+    width: 300px;
+    display: grid;
+    border: 25px solid #A4BF80; 
+    align-items: center;
+}
+#phoneimg{
+    grid-area: phoneimg;
+}
+#phone{
+    grid-area: phone;
+}
+#gmailimg{
+    grid-area: gmailimg;
+}
+#gmail{
+    grid-area: gmail;
+}
+#instaimg{
+    grid-area: instaimg;
+}
+#insta{
+    grid-area: insta;
+}
+#facebookimg{
+    grid-area: facebookimg;
+}
+#facebook{
+    grid-area: facebook;
+}
+#phoneimg,#gmailimg,#instaimg,#facebookimg{
+    margin: 8px;
+}
+#footer{
+    grid-area: footer;
+    background-color: #FEFAD4;
+    font-size: 12px;
+    height: 30px;
+}
